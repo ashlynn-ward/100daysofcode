@@ -34,6 +34,7 @@ Day 6 - May 4, 2025
         Today, I learned the syntax of while loops and functions. One important thing to remember is that function prototypes are not used in Python, so they should be declared at the beginning of the program.
     Project completed - Reeborg's World Maze: Today, I finished the maze level of Reeborg's World (link: https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json). It used functions and loops so the robot would find its way through the maze. 
     Here is the solution used: 
+    
         #Function to turn right
         def turn_right():
             turn_left()
