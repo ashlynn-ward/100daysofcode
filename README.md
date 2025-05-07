@@ -5,7 +5,7 @@ Day 1 - April 28, 2025
         Today's content was simple, but it was important to practice the syntax of Python
         Something interesting I learned was that strings are a primitive data type in Python, unlike C, so they are easy to work with
     Project completed - Band Name generator: user is prompted to answer some questions, and a name for their band is suggested
-    Side Note - Today, I set up my first git repo, and I read some documentation on git. I haven't yet pushed my project (I need to figure out how to do this), but I understand how git works
+    Note - Today, I set up my first git repo, and I read some documentation on git. I haven't yet pushed my project (I need to figure out how to do this), but I understand how git works
 
 Day 2 - April 29, 2025
     Topics covered - primitive data types in Python, type checking, type conversion, mathematical operations, and f-strings
@@ -60,3 +60,16 @@ Day 7 - May 5, 2025
     Today, no new topics were covered, instead I worked on a larger project.
         There were some things that I learned though. First, I discovered that the continue function can be used in python to end an iteration of a loop. Second, I learned that although you cannot define variables without initializing them, you can define lists that are empty. Lastly, a small things that I noticed is that you cannot increment or decrement values using ++ or --
     Project completed - Hangman: this is a classic game of hangman. A random word is chosen from a prewritten list of words, and the user must guess letters in the word. If they guess a wrong letter, they lose a life, and after six lives, they lose the game.
+    Note - Today, I learned how to stage, commit, and push files to github, and I added all of my projects so far to my repo!
+
+Day 8 - May 6, 2025
+    Topics covered - Functions with parameters
+        Today's content was similar to day 6, but I used functions with parameters. One thing that is notable is the difference between Keyword Arguments and Positional Arguments. If you do not want to worry about the order in which arguments are passed to a function, you can label them by their parameter names. When keywords are not used, arguments are passed to the parameters in the order they are written.
+    Project completed - Caesar Cipher: this program prompts the user for a message and a shift number, then encodes of decodes the message using the Caesar cipher. One thing that is different about this program than others is that it continues to run until the user tells the program to stop. 
+    Note - be careful when defining lists/variables in functions and loops. In this program, I create the encrypted_text and decrypted_text within functions, so they are not global. However, I accidentally created them within loops, so every time the loop ran, the string would be cleared. This was a difficult bug to find. 
+
+Day 9 - May 7, 2025
+    Topics covered - dictionaries and nested data structures
+        Today I learned about a brand new data structure: dictionaries. They remind me of lists of structures in C. I now know how to creat dictionaries, add key-value pairs, and access values by their keys. I also understand how to access values in nested dictionaries and lists.
+        One other function I learned about was system("clear") in the system module. This allows the program to clear the console. 
+    Project completed - Blind Auction: this program allows users to hold a blind auction of however many bidders they would like. Each bidder is asked to enter their name and bid, then the console is cleared so the next bidder cannot see their info. At the end, the winner is revealed. 

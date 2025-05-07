@@ -6,7 +6,7 @@
 #Import random module
 import random
 
-#Define function to print current guess
+#Function print_guess prints the current guess
 def print_guess():
     for i in range(0, len(current_guess)):
         print(current_guess[i], end = " ")
@@ -143,5 +143,6 @@ while not is_same and lives!=-1:
 #Once game has ended, print a message that states whether the user won or lost
 if lives ==-1:
     print("You ran out of lives. Game over.")
+    print(f"Answer: {answer}")
 else:
     print("You guessed the word. Congratulations!")
