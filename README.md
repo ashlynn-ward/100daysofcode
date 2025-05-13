@@ -73,3 +73,28 @@ Day 9 - May 7, 2025
         Today I learned about a brand new data structure: dictionaries. They remind me of lists of structures in C. I now know how to creat dictionaries, add key-value pairs, and access values by their keys. I also understand how to access values in nested dictionaries and lists.
         One other function I learned about was system("clear") in the system module. This allows the program to clear the console. 
     Project completed - Blind Auction: this program allows users to hold a blind auction of however many bidders they would like. Each bidder is asked to enter their name and bid, then the console is cleared so the next bidder cannot see their info. At the end, the winner is revealed. 
+
+Day 10 - May 8, 2025
+    Topics covered - functions with outputs and docstrings
+        Today's content went well with day 8, and it was a review of how return statements work. There were 2 things I learned that are unrelated to functions. First, you can have a function as a value in a dictionary. This is very useful when user input determines which function will run. Second, you can use f-strings in the input function. Although I did not learn anything new about the main topic for today, it was a good review of some of the intricacies of the first 10 days of the challenge. 
+    Project completed - Calculator: this program is a calculator that can compute addition, subtraction, multiplication, and division. Although it sounds simple, I used some more complex alogrithms in my solution. First, I stored functions in a dictionary rather than using if-elif statements to determine which operation to use. Second, I used nested loops for continuity. The user decides when they are done with calculations on a certain answer, and they also decide when the total program will finish.
+
+Day 11 - May 9, 2025
+    Today, I did not learn any new content. Instead, I worked on a larger project. 
+        One notable thing I discovered today was that in a Python function, when you use a return statement without a value, it returns a NoneType variable. This variable type overrides the previous variable type of wherever you store the function output. 
+    Project completed - Blackjack: this program simulates a Blackjack game. The user and computer are randomly dealt 2 cards, and the user's cards and one of the computer's cards are revealed. Then, the user chooses whether they want another card or not, with the intention of the cards adding to 21 but not over it. One of the difficulties I had with this project was the ace. In Blackjack, ace either equals 11 or 1, depending if 11 will send the player's score over 21. I initially had the mechanism of choosing whether or not to add 11 in the score function, but I realized that it is difficult to return more than one value in functions. Also, the value of aces may need to change in 2 places. 
+    Note - one concept that I did not address in my program was the limited number of cards of each type in a deck. I have thought about how to solve this problem, but did not have time to implement it. If I have extra time, I will create a dictionary to store the number of each card in the deck, then change that number each time a card is assigned to a player. If the number of cards reaches zero, the program will randomly choose another value for the card.
+
+Day 12 - May 11, 2025
+    Topics covered - Local and global scope
+        Today's content was a review. One thing that is notable is that Python does not have block scope. So, if you create a variable in an if/else statement or loop, it has global scope (unless it is also created in a funciton).
+    Project completed - Number Guessing Game: this program is a game that randomly generates a number between 1 and 100. Then, the user must guess the number in either 5 or 10 guesses. For each wrong guess, they are told whether the guessed number was too high or too low. This program ends when the user no longer wants to play. 
+
+Day 13 - May 12, 2025
+    Topics covered - debugging
+        Today, I learned several useful tips on how to debug. Some of them I already use, such as using print statements to check values and trying to reproduce the bug. I also learned how to use a debugger. Although I have used one before, no one has ever explained to me exactly how it works. Now, I understand how to use breakpoints, step over, step into, and step into my code. 
+    There was no project to complete today. Instead, I was given 3 programs to debug. In all 3, there were typos, mistakes with indentation, and logical errors with the kewords 'and' and 'or'. 
+
+Day 14 - May 13, 2025
+    Today, no new topics were covered. Instead, I worked on a larger project. While programming, I dived depper into how to import your own files into other files. I read up on how files  must be imported differently depending on how they are related. 
+    Project completed - Higher Lower Game: this program imports information about celebrities from a list in another file that I created. Then, it randomly chooses 2 celebrities to display. The user must decide which celebrity has more Instagram followers. If they get it right, their score increases, and option B becomes option A. Then, a new person is chosen for option B, and a new round begins. Once the user gets it wrong, the game ends, and they have the option to play again. 
