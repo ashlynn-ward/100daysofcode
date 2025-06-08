@@ -38,6 +38,8 @@ scissors = '''
 
 #Print greeting and store user input as an integer
 user_choice = int(input("Welcome to Rock, Paper, Scissors! What is your choice? Type 0 for Rock, 1 for Paper, and 2 for Scissors: "))
+while user_choice!=0 and user_choice!=1 and user_choice!=2:
+    user_choice = int(input("Invalid input. What is your choice? Type 0 for Rock, 1 for Paper, and 2 for Scissors: "))
 
 #Randomly choice rock, paper, or scissors
 computer_choice = random.randint(0,2)

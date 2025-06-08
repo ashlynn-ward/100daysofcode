@@ -10,6 +10,12 @@ import random
 #Note - this program does not consider the number of cards in a deck
 cards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
+#Define a dictionary that stores the number of each type of card left in the deck and fill it
+deck = {}
+for i in range(0, len(cards)):
+    deck[cards[i]] = 4
+cards_in_deck = 52
+
 #Function calculate_score computes the score of a hand
 def calculate_score(card, score):
     if card == "J" or card == "Q" or card == "K":
@@ -28,9 +34,16 @@ while keep_running!="y" and keep_running!="n":
     
 #Continue to runn game until user stops it
 while keep_running == "y":
+    #If half of the deck has been used, "reshuffle" it
+    if cards_in_deck <=26:
+        for i in range(0, len(cards)):
+            deck[cards[i]] = 4
+        cards_in_deck = 52
+
     #Define a variable to keep track of the number of A's in user's hand
     user_A = 0
     comp_A = 0
+
     #Choose 2 random cards for the user and the computer
     user_cards = []
     comp_cards = []
@@ -39,6 +52,17 @@ while keep_running == "y":
     for i in range(0,2):
         user_cards.append(cards[random.randint(0,12)])
         comp_cards.append(cards[random.randint(0,12)])
+
+        #If card chosen is no longer in deck, choose a new card
+        while deck[user_cards[i]]==0:
+            user_cards[i]= cards[random.randint(0,12)]
+        #Remove the added cards fromt the deck
+        deck[user_cards[i]]-=1
+        while deck[comp_cards[i]]==0:
+            comp_cards[i]= cards[random.randint(0,12)]
+        deck[comp_cards[i]]-=1
+        cards_in_deck -=2
+
         #Calculate user's and computer's score
         user_score = calculate_score(user_cards[i], user_score)
         #Determine whether ace should be equal to 11, or it should remain as the 1 that was already added
