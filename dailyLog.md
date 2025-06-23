@@ -170,3 +170,81 @@ Day 28 - June 6, 2025
     Topics covered - Canvas in Tkinter and Dynamic Typing
         Today, I learned how to overlay widgets in Tkinter using the canvas. I also learned how to use the after and after_cancel methods to wait a certain amount of time to refresh the screen and to cancel that functionality. This was useful for building a timer. Lastly, I looked at dynamic typing and how variables in Python can change data types throughout the program.
     Project completed - Pomodoro Timer: this program is a work timer. It uses Tkinter to create a GUI. When the start button is pressed, a 25-minute timer is started for work, followed by a 5-minute timer for a break. This is repeated 4 times. There is also a reset button that stops the timer. 
+
+Day 29 - June 7, 2025
+    Topics covered - Tkinter message boxes
+        Today, I learned how to create different types of popups. 
+    Project completed - Password Manager: this program allows the user to enter a website and their username and password for the site. Then, it stores that information in a text file. The app also generates random, strong passwords for the user. If inadequate info is given, a pop up error will occur.
+
+Day 30 - June 9, 2025
+    Topics covered - catching exceptions and JSON files
+        Today, I learned how to use the try...except block to catch possible errors. I used it mostly to validate inputs and to create new files for the first time the program runs. I also learned how to read, write, and update JSON files. 
+    There was no new program completed today. Instead, I added error catching to day26-NATOAlphabet and day29-PasswordManager. I also changed the data saving mechansim in the Password manager to a JSON file and implemented a searching algorithm. Now, the user can look up passwords that were already saved by entering the website name. 
+
+Day 31 - June 10, 2025
+    Today, there were no new topics covered. Instead, I worked on a larger project
+    Project completed - Flashcards: this program displays French words on flashcards to the user. After 3 seconds, the card flips to reveal the English translation. The user can choose whether they knew the word or not, and a new card is shown. If they knew the word, it is removed from the list of cards, and the new list of words to learn is saved as a csv file. 
+
+Day 32 - June 11, 2025
+    Topics covered - SMTP Library and Datetime library
+        Today, I learned how to send emails in Python using the SMTP library. I also learned how to access the current datetime using the datetime library. 
+    Project completed - Birthday Email Sender: this program sends an email to a friend or family member on their birthday. 
+    Note - none of the projects completed today actually work because valid email addresses have not been used. To use this project, replace the filler text with actual emails and app passwords. Also, if you wanted this program to run every day, you could upload it to a cloud, and schedule it to run at a certain time. 
+
+Day 33 - June 12, 2025
+    Topics covered - Accessing data through API requests
+        Today, I learned how to make an API requet using the requests library. I also learned how to interpret error codes, how to read the data as a json file, and how to pass parameters in an API request.
+    Projects completed - Kanye Quotes Generator: this is a small project that calls an API to display Kanye West quotes.
+    ISS Notifications: this program calls 2 APIs - one that returns the location of ISS, and one that returns the times of sunrise and sunset for a certain place. After determining whether the ISS is visible to the user (is it overhead and is it dark), a tkinter popup will be shown on the user's screen. 
+
+Day 34 - June 13, 2025
+    Topics covered - type hinting
+        Today, very little new content was covered. Instead, I built a larger project. However, I did learn how to type hint in Python when creating either variables or functions. This is a useful trick for debugging. 
+    Project completed - API Quiz App: this program uses the same classes as day 17's Quiz Game, however, it is upgraded. First, it calls an API to access 10 questions at the beginning of the game. That way, every time the user plays, the questions are different. Also, I built a GUI for the game, so displaying the questions and checking the answers have changed. 
+
+Day 35 - June 14, 2025
+    Topics covered - API keys and environment variables
+        Today, I learned why and how API authentication works. I also practiced reading through API documentation to access the data that I needed. The other topics I covered was how to keep personal data (emails, API keys, phone numbers, etc.) private while still running my code using environment variables.
+    Project completed - Weather Notification: this project taps into th Open Weather API to access the weather for the next 12 hours. Then, it determines whether it will rain in that time period. If it will, an email will be sent telling the user to bring an umbrella. 
+
+Day 36 - June 15, 2025
+    No new topics were covered today. Instead, a larger project was completed.
+    Project completed - Stock Tracker: This program requests the closing stock prices for a specified company for the last 2 days. If the stock surpassed a certain change threshhold (currently 5%), an email is sent to the user to notify them. Along with the stock change, 3 current headlines about the company are accessed through another API and sent in the email.
+    Note - there are 2 reasons this program does not run properly in the state it is in. First, I used filler text for the email addresses. If you want to use this program, fill in with real emails. Second, the stock price API does not seem to update daily. Therefore, the dates calculated by the datetime library may not yet be keys for the API data. More testing needs to be done to see how often the API is updated. 
+
+Day 37 - June 16, 2025
+    Topics covered - advanced authentication and http requests
+        Today, I learned how to user headers in API requests so that my personal info (like API keys) do not appear in my https search. I also learned how to implement post, put, and delete requests, and when they are appropriate to use.
+    Project completed - Habit Tracker: this project was setting up a habit tracker on Pixela. I set up an account and graph, then wrote the code to add, update, and delete info. To use, insert your own token and username, and un-comment the account and graph creation. 
+
+Day 38 - June 17, 2025
+    Today, there were no new topics covered. Instead, I worked on a larger project.
+    Project completed - Workout Tracker: this program calls on 2 APIs: Nutritionix and Sheety. It allows a user to enter a description of their workout in natural language, which Nutrionix converts into workout data. Then, Sheety is used to upload the data into a Google Sheet. To use, insert your own API id, API key, and Sheety endpoint. 
+
+Day 39 - June 18, 2025
+    Today, there were no new topics covered. Instead, I began a larger project.
+    Project worked on - Flight Tracker: this program accesses flight prices from the Amadeus API to find the cheapest flights in the next 6 months to predetermined destinations. It then updates a Google Sheet with these prices, and sends the user a notification when the prices change. 
+
+Day 40 - June 19, 2025
+    Today, I completed the Flight Tracker Program. Now, it runs as a Flight Club. Users can sign up by filling out a Google Form that is attached to the flight tracker Google Sheet. Then, whenever a cheaper flight is found, everyone in the club is emailed about it. Another new feature is the direct vs. indirect check. First, the program checks for a direct flight. If it cannot find one, it does a second search for indirect flights. 
+
+Day 41 - June 20, 2025
+    Topics covered - Intro to HTML
+        Today, I covered the basics of HTML, such as headers, paragraphs, and self-closing tags like hr and br. I have taken courses on HTML before, so this was all review. I am looking forward to diving into web desgin again, though!
+    Project completed - Movie Ranking: This code file is for a simple website. It uses different headings and paragraph elements to display 3 of my favourite movies. This project was for practice using different elements. Although it is very basic, it was a good reminder on how to use opening and closing tags, as well as comments in HTML.
+
+Day 42 - June 21, 2025
+    Topics covered - HTML nesting and elements
+        Today, I did more review of HTML. I covered the anchor, image, and list elements. I also looked at nesting code to make it readable. It was good to go over these topics, because I had forgotten some things, such as using attributes and adding the doctype at the beginning of the file. 
+    Project completed - Birthday Invite Website: This website is an invitation to a birthday party. It includes an image, list, and a Google maps link. There is no styling to the website, just html elements. 
+    Note - Today, I fixed all of my multi-file programs! I figured out how to change the working directory so that external files can be accessed by main. This allows me to read files and csv's, as well as using images for GUIs. Now that external files can be accessed, I need to debug days 29 and 34.
+
+Day 43 - June 22, 2025
+    Topics covered - intro to CSS
+        Today, I reviewed the basics of CSS. This included how to link a CSS file to HTML, the 3 ways to style HTML, and how to use selectors. I have taken courses on CSS before, so it was all review.
+    Project completed - Colour Vocab: this website shows different colours with their corresponding Spanish names. It was created to practice using CSS selectors to change specific sections of the HTML.
+
+Day 44 - June 23, 2025
+    Topics covered - CSS Box model and font properties
+        Today, I reviewed how to use the box model to change the layout of a website. I also learned about the different properties related to font, and how to link an external font to an HTML file.
+    Project completed - Motivational Poster: This website looks like a motivational poster. It includes a large image and the motivational text. The purpose of this website was to work with the box model and link external fonts to a project. 

@@ -3,13 +3,16 @@
 #This program is a guessing game. The user is shown a blank map of the US, and they must enter as many states
 #as they can. When a state is guessed, it is labelled on the map.
 
-#Change directory to current working directory
+#Import os
 import os
-os.chdir(os.getcwd())
 
 #Import turtle and pandas
 import turtle
 import pandas
+
+#Change working directory so program can access files
+dir_path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(dir_path)
 
 #Set up screen
 screen = turtle.Screen()

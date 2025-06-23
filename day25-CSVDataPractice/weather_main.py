@@ -1,7 +1,11 @@
-#Import csv library
+#Import csv, pandas, and os libraries
 import csv
-#Import pandas library
 import pandas
+import os
+
+#Change working directory so program can access files
+dir_path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(dir_path)
 
 #Open and read the weather data
 with open("weather_data.csv") as data_file:
@@ -17,7 +21,7 @@ with open("weather_data.csv") as data_file:
     print(temperatures)
 
 #Read weather data using pandas and print it
-data = pandas.reac_csv("weather_data.csv")
+data = pandas.read_csv("weather_data.csv")
 print(data)
 print(data["temp"])
 

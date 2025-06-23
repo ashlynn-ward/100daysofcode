@@ -1,0 +1,27 @@
+/* Change background and text colour for entire webpage */
+*{
+    background-color: black;
+    color:white;
+}
+
+/* Center text */
+.text{
+    text-align:center;
+}
+
+/* Change font for header */
+h1{
+    font-family:"libre Baskerville", sans-serif;
+    text-transform: uppercase;
+}
+
+/* Center image */
+img{
+    width:100%
+}
+
+/* Center all items */
+div{
+    width:50%;
+    margin-left: 25%;
+}

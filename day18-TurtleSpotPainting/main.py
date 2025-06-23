@@ -3,10 +3,14 @@
 #This program uses turtle graphics to "paint" a piece similar to Hirst's paintings.
 #It paints randomly-colored dots on the screen
 
-#Import Turtle class
-from turtle import Turtle, Screen
-#Import random module
+#Import random module, and os and turtle libraries
 import random
+import os
+import turtle
+
+#Change working directory so program can access files
+dir_path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(dir_path)
 
 #Import Colorgram to extract colours from an uploaded Hirst painting
 import colorgram
@@ -22,8 +26,9 @@ for color in colors:
     rgb_colors.append(new_color)
 
 #Create a Turtle Object
-timmy = Turtle()
+timmy = turtle.Turtle()
 #Change turtle's speed, move its pen up, and remove turtle graphic
+turtle.colormode(255)
 timmy.speed("fastest")
 timmy.penup()
 timmy.hideturtle()
@@ -48,5 +53,5 @@ for dot_count in range(1, number_of_dots+1):
     
 
 #Set screen to exit on click
-screen = Screen()
+screen = turtle.Screen()
 screen.exitonclick()

@@ -5,9 +5,9 @@
 #so the user knows that their time is up.
 
 #Define constants
-PINK = "e2979c"
-RED = "e7305b"
-GREEN = "9bdeac"
+PINK = "#e2979c"
+RED = "#e7305b"
+GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
 WORK_MIN = 25
@@ -21,9 +21,15 @@ my_timer = None
 #Import tkinter and math libraries
 from tkinter import *
 import math
+import os
+
+#Change working directory so program can access files
+dir_path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(dir_path)
 
 #Set up timer mechanism - function start timer calls the countdown
 def start_timer():
+    global reps
     reps+=1
     #Determine how long the timer should be for and change title
     if reps%2!=0:
@@ -43,6 +49,8 @@ def start_timer():
     
 #Reset function resets labels, checkmarks, and reps
 def reset():
+    global my_timer
+    global reps
     window.after_cancel(my_timer)
     reps = 0
     timer_label.config(text = "Timer")
@@ -53,6 +61,7 @@ def reset():
 
 #Set up countdown mechanism - function countdown uses the method after to recursively countdown
 def countdown(count):
+    global my_timer
     minutes = math.floor(count/60)
     seconds = count%60
     if seconds <10:
@@ -78,14 +87,14 @@ canvas.grid(row = 1, column = 1)
 
 #Add timer label
 timer_label = Label(text = "Timer", fg = GREEN, font = (FONT_NAME, 50), bg = YELLOW)
-timer_label.grid(row = 0, column = 2)
+timer_label.grid(row = 0, column = 1)
 
 #Add buttons
 #Start countdown when start button is pressed
-start_button = Button(text = "Start", highlightthickness = 0, command = start_timer)
+start_button = Button(text = "Start", highlightthickness = 0, command = start_timer, bg = YELLOW)
 start_button.grid(row = 2, column = 0)
 #Reset timer and labels when reset button is pressed
-reset_button = Button(text = "Reset", highlightthickness = 0, command = reset)
+reset_button = Button(text = "Reset", highlightthickness = 0, command = reset, bg = YELLOW)
 reset_button.grid(row = 2, column = 2)
 
 #Add a label to show checkmarks for each timer done

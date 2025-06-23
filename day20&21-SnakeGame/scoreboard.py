@@ -10,8 +10,11 @@ class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         #Use highscore saved in data file
-        with open("highscore.txt") as data:
-            self.highscore = int(data.read())
+        try :
+            with open("highscore.txt") as data:
+                self.highscore = int(data.read())
+        except ValueError:
+            self.highscore = 0
         #The score will be displayed on the screen as a turtle object
         self.score = 0
         self.color("white")
@@ -36,7 +39,7 @@ class Scoreboard(Turtle):
             self.highscore = self.score
             #Update the highscore in the file
             with open("highscore.txt", mode = "w") as file:
-                file.write(self.highscore)
+                file.write(str(self.highscore))
         self.score = 0
         self.update_scoreboard()
 

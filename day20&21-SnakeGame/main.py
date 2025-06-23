@@ -13,19 +13,9 @@ from scoreboard import Scoreboard
 import time
 import os
 
-# Get the current working directory
-current_directory = os.getcwd()
-print("Current working directory:", current_directory)
-
-# Define the path to the new working directory
-new_directory = "/Users/ashlynnward/Documents/code/100daysofcode/day20&21-SnakeGame" # Replace with the desired path
-
-# Change the working directory
-os.chdir(new_directory)
-
-# Verify the change
-new_current_directory = os.getcwd()
-print("New working directory:", new_current_directory)
+#Change working directory so program can access files
+dir_path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(dir_path)
 
 #Create a Screen object
 screen = Screen()

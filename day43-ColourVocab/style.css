@@ -1,0 +1,26 @@
+/* Change the size of the images */
+img{
+    height: 200;
+    width: 200;
+}
+/* Change font of color name text */
+.color-title{
+    font-weight:normal;
+}
+
+/* Change colours of colour name text */
+#red{
+    color:red;
+}
+#orange{
+    color:orange;
+}
+#yellow{
+    color:yellow;
+}
+#green{
+    color:green;
+}
+#blue{
+    color:blue;
+}
