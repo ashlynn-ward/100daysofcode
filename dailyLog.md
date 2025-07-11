@@ -248,3 +248,34 @@ Day 44 - June 23, 2025
     Topics covered - CSS Box model and font properties
         Today, I reviewed how to use the box model to change the layout of a website. I also learned about the different properties related to font, and how to link an external font to an HTML file.
     Project completed - Motivational Poster: This website looks like a motivational poster. It includes a large image and the motivational text. The purpose of this website was to work with the box model and link external fonts to a project. 
+
+Day 45 - June 24, 2025
+    Topics covered - Web Scraping wiht BeautifulSoup
+        Today, I learned what web scraping is. This is a completely new topic to me. I learned how to open HTML files using requests, then how to parse them using different selectors using the BeautifulSoup class. I also looked into the ethics behind web scraping. 
+    Project completed - Top 100 Movies: This program scrapes a website for a list of its top 100 movies. It then stores that list in a text document. That way, the user can remove the movies as they watch them.
+
+Day 46 - June 25, 2025
+    Today, no new topics were covered. Instead, I practiced web scraping in a larger project.
+    Project completed - Spotify Playlist: this program prompts the user for a date. Then, it scrape Billboard's top 100 songs for that date and creates a Spotify playlist out of them. 
+
+Day 47 - June 26, 2025
+    Today, no new topics were covered. Instead, I worked on a larger project.
+    Project completed - Amazon Price Tracker: this program scrapes Amazon's website for a specified item. When that price drops below a threshold, an email is sent to the user to notify them.
+
+Day 48 - June 27, 2025
+    Topics covered - Selenium Webdriver
+        Today, I learned how to use the selenium library to scrape and interact with websites. One thing I noticed was that there are a lot of separate modules you must import to do different things within this library.
+    Project completed - Auttomated Game Bot: this program automates the game play of Cookie Clicker. It clicks the cookie and buys the most expensive items from the store. After five minutes of playing, the final cookie count and cookies per second are printed. 
+    Note - this game does not use the actual Cookie Clicker website. Instead, it uses an app that someone uploaded to github for educational purposes. 
+
+Day 49 - June 28, 2025
+    Today, no new topics were covered. Instead, a larger project was finished.
+    Project completed - LinkedIn Job Application: this program uses Selnium to automatically fill in job applications on LinkedIn. It only applies for the ones that require minimal information (name, exmail, phone number). TO use this program, you must enter your own LinkedIn credentials, add your resume to your profile, and turn off 2-step verification.
+
+Day 50 - June 29, 2025
+    Today, no new topics were covered. I decided to stray from the course slightly because I did not like the project for the day, so I practiced the basics of Selenium more in my own project.
+    Project completed - Job Board Listings: this program asks the user to enter a keyword and location, then searches Indeed for job listings that match. It then stores them in a dictionary and prints them for the user. 
+
+Day 51 - June 30, 2025
+    Today, no new topics were covered. Again, I completed my own project to practice using Selenium webdriver. One new thing I cam across in this project was the pandas.read_html method. This allows you to pass a URL or HTML table to pandas to convert into a dataframe. It always returns the tables it finds in a list. These can then be saved as csv's.
+    Project completed - Downloading Population Tables: this project navigates through Statistics Canada's website for population data. The table chosen was completely random, and it would be easy to change which table to choose. Once it opens the page with the data, the pandas library is used to read the table and store it as a csv. The table is also downloaded from the website. 

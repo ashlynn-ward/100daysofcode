@@ -3,9 +3,7 @@
 #This program replaces and prints the same letter to different people by reading the letter and a list of 
 #names from other files
 
-#Import change_directory library and change working directory so program can access files
 import os
-import sys
 
 #Change working directory so program can access files
 dir_path = os.path.dirname(os.path.realpath(__file__))
