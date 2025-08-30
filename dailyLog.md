@@ -279,3 +279,126 @@ Day 50 - June 29, 2025
 Day 51 - June 30, 2025
     Today, no new topics were covered. Again, I completed my own project to practice using Selenium webdriver. One new thing I cam across in this project was the pandas.read_html method. This allows you to pass a URL or HTML table to pandas to convert into a dataframe. It always returns the tables it finds in a list. These can then be saved as csv's.
     Project completed - Downloading Population Tables: this project navigates through Statistics Canada's website for population data. The table chosen was completely random, and it would be easy to change which table to choose. Once it opens the page with the data, the pandas library is used to read the table and store it as a csv. The table is also downloaded from the website. 
+
+Day 52 - July 1, 2025
+    Today no new topics were covered. Instead, I started one final project to practice using Selenium. One thing that I did learn was the importance of using the sleep method to allow websites to load.
+    Project started - Map Directions: this program prompts the user to enter their start and end addresses, then inputs them into MapQuest. It then prints the ETA and any traffic alerts. 
+    Note: I did not finish this project today. I spent an hour and a half putting together the basic functionality, and doing minimal debugging. However, I ran into the issue of having to select an element in a dropdown that is powered by Javascript. I did a little bit of reading on how to solve this problem, but it seems overwhelming. I will come back to this projet tomorrow to fix that. 
+
+Day 53 - July 2, 2025
+    Today, no new topics were covered. However, I did learn how important the sleep function is when driving websites. Not giving the website enough time to load was the reason that my program was not working on Day 52.
+    Project completed - Map Directions: I debugged this porject today, and now it runs!
+
+Day 54 - July 3, 2025
+    Topics covered - Intro to Flask and Function Decorators
+        Today, I learned the basic format of Flask to create backends. While looking at the basic format given in the documentation, I looked into the __name__ attribute in Python, as well as how to create and use function decorators. Lastly, I learned some of the common command line functions.
+    Today, I did not complete a new project. Instead, I practiced creating a Flask server and function decorators.
+
+Day 55 - July 4, 2025
+    Topics covered - Parsing URLs and Rendering HTML Elements
+        Today, I learned how to parse URLS to show different HTML elements using Flask. I also learned about some more advanced uses of function decorators, such as passing in *args and **kwargs to access the original function's arguments. 
+    Project completed - Higher Lower Website: this program is similar to Day 14. The user guesses a number, and if it is too high or too low, they are told. If it is right, they win. The user enters the number at the end of the URL, and different elements are displayed on the website depending on how they guessed. 
+
+Day 56 - July 5, 2025
+    Topics covered - rendering HTML files and static files
+        Today, I learned how to use separate HTML files with Flask. This makes code more readable, as I no longer have to include long sections of HTML within my Python files. I also learned how to change HTML and CSS templates to create personalized websites.
+    Project completed - Personal Name Card: this project used a template from https://html5up.net/. I then changed the HTML content using DevTools to personalize the website. Lastly, I created a Flask server to render the HTML and CSS. 
+
+Day 57 - July 6, 2025
+    Topics covered - Jinja templating with HTML
+        Today, I learned how to use Jinja to add snippets of Python into my HTML. This is useful for creating dynamic content, or for looping through content rather than writing repetitive HTML. I learned how to incorporate Jinja into HTML, how to use multiline blocks of python with Jinja, and how to pass parameters to HTML in render_template calls. 
+    Project completed - Age Guesser: this program prompts the user to enter their name, then it calls an API to guess their age and gender. It renders this info using Jinja. 
+        Blog Posts: this website displays several blog posts. The blogs are stored in a json file and are accessed through an API call. The HTML then uses Jinja to loop through each blog post and render the content.
+
+Day 58 - July 7, 2025
+    Topic covered - Bootstrap
+        Today, I was introduced to Bootstrap. I learned when I should use it, and its pros and cons. I practiced using the 12 column layout, some of its common components, such as buttons, navbars, and headers, and utility tools, such as spacing. Lastly, I learned how to customize the free templates on Bootstrap for my own projects.
+    Project started - Startup Website: this website is the homepage for a fictional startup company. It utilizes Bootstrap's layout and several of its templates. I spent 2 hours learning about Bootstrap and starting the website, so I will finish the website on another day. 
+
+Day 59 - July 8, 2025
+    Today, I completed the Startup Website project, which was started on Day 58.
+    Project completed - Startup Website: I finished the website! I added the testimonial, pricing, and footer today. One thing I learned when finishing this project is that I should check Bootstrap documentation for any minor CSS changes when I am using its templates. I discovered how vast its capabilities are, and using Bootstrap classes may save me time because I don't have to code the CSS. 
+
+Day 60 - July 9, 2025
+    Today, I did not learn new content. Instead, I worked on a larger project.
+    Project completed - Upgraded Blog: this website has the same content as Day 57, however, it has been upgraded. A Bootstrap template was applied to the pages to give it CSS styling. During this project, I learned how to create a single header/footer file and call on it using Jinja in other pages. 
+
+Day 61 - July 10, 2025
+    Topics covered - Receiving form data
+        Today, I learned how to use the method and action attributes in HTML, as well as the request method in Flask, to receive data from submitted forms. 
+    I did not complete a new project today. Instead, I got the form on Day 60's website to work. 
+
+Note - I took a break from July 11 - August 1 to travel.
+
+Day 62 - August 2, 2025
+    Topics covered - WTForms and Template Inheritance
+        Today, I learned how to use WTForms in Python and HTML to create forms that are easy to validate. I also learned how to create HTML templates using blocks. This comes in handy when there is repeated code that must be slightly personalized. I also used Bootstrap-Flask as a template so that I could use itws render_form module to create a form.
+    Project completed - WTForms: this project requires the user to enter their login info. If they do successfully, it reveals 'secrets' to them. 
+
+Day 63 - August 3, 2025
+    Today, I worked on a larger project instead of covering new topics.
+    Project completed - Coffee and Wifi: this program shows uses wifi ratings for different coffee shops in a tabular form. It also includes a form where users can add different coffee shops and their info to the table. When working on this project, I learned about the different input fields you can use with WTForms, as well as different types of validation. 
+
+Day 64 - August 4, 2025
+    Topics covered - SQLite
+        Today, I learned how to create databases to store information even when a program is not running. I understand how databases work, but I am still unsure of how to create and change its info. I would be able to do this on my own yet. All code written today was guided.
+    Project completed - Virtual Library: this program allows users to keep track of books they have read along with ratings of those books. The info given by the user is then stored in a database, so that it can be displayed everytime the website is opened. 
+
+Day 65 - August 5, 2025
+    Today, I worked on a larger project instead of covering new topics.
+    Project completed - Top Movies: this website allows users to enter their top movies. It then calls an API to display that movie's info. The user can add and later edit their own review and rating, and can delete a movie.
+
+Day 66 - August 6, 2025
+    Topics covered - Web Design
+        Today, I covered the 4 pillars of web design. I learned how to use colour theory, typography, white space, and hierarchy to make a user interface simple and professional. I also looked into how to use these elements to create a UI that does not interfere with the user experience.
+    Today, I did not completed a new project. 
+
+Day 67 - August 7, 2025
+    Topics covered - REST APIs
+        Today, I learned how to create my own API in the RESTful form. I learned about the different HTTP verbs, some of which I had previously worked with. I also learned about the specific patterns of routes. I put these into practice by creating my own API. However, I am still unsure about using SQLAlchemy, so I needed help putting this project together.
+    Project completed - REST API: this program is an API that accesses data about different cafes. 
+    Note - I need to spend another day learning about SQLAlchemy, especially about CRUD. I am using it, and when it is explained to me I can follow, but I do not yet feel comfortable calling on and creating a db by myself. 
+
+Day 68 - August 8, 2025
+    Topics covered - SQLAlchemy
+        Today, I reviewed SQLAlchemy. I watched external videos about the basics of creating dbs and tables, reading tables, updating records, and deleting records. I feel much more confident in my abilities to use SQLAlchemy now.
+    I did not complete a new project. 
+
+Day 69 - August 10, 2025
+    Today, I worked on a larger project instead of covering new content.
+    Project completed - Blog Upgrade 2: this program is an upgraded version of days 57 and 60. It now stores all blog data in a databse. Because of this change, the user can now add, edit, and delete blog posts. 
+
+Day 70 - August 11, 2025
+    Topics covered - Authentication
+        Today, I learned how to authenticate users on a webpage. This included signing them up and logging them in. I looked into levels of security, too, such as the differences between encryption, hashing, and salting a password. I then practiced hasing and salting passwords.
+    Project completed - Authentication: this program asks a user to either sign up or login to the website. Once they are logged in, they can navigate to a secret page. 
+
+Day 71 - August 12, 2025
+    Today, I worked on a larger project instead of covering new topics. However, as I was working, I learned how to create relational databases. I only used one-to-many relationships in my program.
+    Project completed - Blog Upgrade 3: this is the final upgrade to the blog post project. Now, users can register/login to the website. If they are the first user (id=1), they are the admin. Only admin can create, edit, and delete posts. Now, anyone can leave a comment on a post, and their name will be associated with the comment. 
+
+Day 72 - August 13, 2025
+    Topics covered - Git and Github
+        Today, I learned about git and github. I have alreday been using git to track my work, but now I understand how it worked. I covered staging, commiting, and pushing projects, .gitignore, cloning, branching, forking, and pull requests. I also looked at the differences between local and remote repos.
+    I did not complete a new project. 
+
+Day 73 - August 14, 2025
+    Today, Git and Github were used, but no new topics were covered. 
+    Project completed - Blog Deployment: this program is a continuation of the Blog Post website. Now, the blog can be hosted on Render once it is posted to Github. It also uses a Postgres db. 
+
+Note - I took of August 15-August 27 to travel.
+
+Day 74 - August 28, 2025
+    Topics covered - Exploring Data with Pandas
+        Today, I learned how to use different Pandas methods and attributes to clean and explore data in a table. I removed NaN values, selected specific columns, rows, and cells based on certain values, and I sorted data using sort() and groupby(). 
+    I did not complete a new project today. Instead, I used Google Colab Notebook to test out different Pandas features with a random csv file. 
+
+Day 75 - August 29, 2025
+    Topics covered - Creating Graphs
+        Today, I learned about a few more data exploration tools in Pandas, such as pivoting a table and filling in NaN values. I also learned how to use Matplotlib to create graphs and charts of the data given. 
+    Again, I did not complete a project today. Instead, I used Google Colab Notebook to practice creating graphs and changing elements on them. 
+
+Day 76 - August 30, 2025
+    Topics covered - Aggregate Data and Merging DataFrames
+        Today, I learned more about data science with Pandas. I discovered that you can incorporate HTML into your text cells in a Notebook. I also learned how to use teh agg() function to operate on specified cells. Lastly, I learned how to display 2 graphs that share an x-axis (with different y_axes) on the same graph, and ultimately how to merge them into one dataframe.
+    Like the last few days, I did not complete a new project today. However, I practiced what I learned to analyze several csvs about the history of LEGO. 
