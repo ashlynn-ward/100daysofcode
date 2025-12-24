@@ -63,7 +63,7 @@ def save():
                 with open("data.json", mode = "r") as file:
                     #Readthe data
                     data = json.load(file)
-            except FileNotFoundError:
+            except (FileNotFoundError, json.decoder.JSONDecodeError):
                 #Create a new file and write to it if the file does not exist
                 with open("data.json", mode = "w") as file:
                     json.dump(new_data, file, indent = 4)
@@ -88,14 +88,14 @@ def find_password():
             data = json.load(file)
             found_password = data[website_key]
     #If no entries have been made, show a popup error
-    except FileNotFoundError:
-        messagebox.showerror(text = "You must enter a password before you can search.")
+    except (FileNotFoundError, json.decoder.JSONDecodeError):
+        messagebox.showerror(message = "You must enter a password before you can search.")
     #If website password does not exist, show a pop up error
     except KeyError:
-        messagebox.showerror(text = f"There is no password saved for {website_key}.")
+        messagebox.showerror(message = f"There is no password saved for {website_key}.")
     #Show a popup with the password
     else:
-        messagebox.showinfo(text = f"The password for {website_key} is {found_password}.")
+        messagebox.showinfo(message = f"The password for {website_key} is {found_password}.")
             
 #Set up UI
 window = Tk()

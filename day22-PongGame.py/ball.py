@@ -30,5 +30,3 @@ class Ball(Turtle):
         self.move_speed = 0.1
         self.goto(0,0)
         self.bounce("paddle")
-
-    #

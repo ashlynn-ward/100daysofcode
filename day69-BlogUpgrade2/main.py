@@ -55,7 +55,7 @@ class CreatePostForm(FlaskForm):
 def get_all_posts():
     #Get all blog posts and display on home page
     results = db.session.execute(db.select(BlogPost))
-    posts = results.scalars()
+    posts = results.scalars().all()
     return render_template("index.html", all_posts=posts)
 
 @app.route('/<int:post_id>')
@@ -81,7 +81,7 @@ def add_new_post():
         db.session.add(new_post)
         db.session.commit()
         return redirect(url_for("get_all_posts"))
-    return render_template("make-post.html", form=form)
+    return render_template("make-post.html", form=form, is_edit = False)
 
 @app.route("/edit-post/<int:post_id>", methods=["GET", "POST"])
 def edit_post(post_id):

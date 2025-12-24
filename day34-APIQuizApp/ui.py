@@ -42,11 +42,11 @@ class QuizInterface():
 
     #Methods true_pressed and false_pressed return the user's answer to the quiz brain to determine whether it is right
     def true_pressed(self):
-        is_right = self.quiz.check_answer("True", self.quiz.question_list[self.quiz.question_number]["question_answer"])
+        is_right = self.quiz.check_answer("True", self.quiz.current_question.answer)
         self.give_feedback(is_right)
 
     def false_pressed(self):
-        is_right = self.quiz.check_answer("False")
+        is_right = self.quiz.check_answer("False", self.quiz.current_question.answer)
         self.give_feedback(is_right)
 
 
@@ -60,13 +60,13 @@ class QuizInterface():
         #Tell user when there are no more questions, and disable the buttons
         else:
             self.canvas.itemconfig(self.q_text, text = "You've completed the quiz!")
-            self.true_button.state("disabled")
-            self.false_button.state("disabled")
+            self.true_button.config(state = "disabled")
+            self.false_button.config(state = "disabled")
 
     #Method give_feedback changes the background colour 
     def give_feedback(self, is_right):
         if is_right:
-            self.canvas.congig(bg = "green")
+            self.canvas.config(bg = "green")
         else:
             self.canvas.config(bg = "red")
         self.window.after(1000, self.get_next_question)

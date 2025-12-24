@@ -1,0 +1,10 @@
+.card-background {
+    /* This tells the image to cover the entire container */
+    background-size: cover;
+  
+    /* This centers the image both horizontally and vertically */
+    background-position: center;
+  
+    /* This prevents the image from repeating */
+    background-repeat: no-repeat;
+  }

@@ -152,7 +152,7 @@ Day 24 - June 2, 205
 
 Day 25 - June 3, 2025
     Topics covered - reading and writing csv files, and the pandas library
-        Today, I learned what a csv file is. I was also introduced to the pandas library, which seems very useful for analyzing data. I have not yet read much of the documentation, but I did play aroudn with some methods in it, such as accessing different rows and columns, finding the max and mean of a column, and creating new csv files in a program.
+        Today, I learned what a csv file is. I was also introduced to the pandas library, which seems very useful for analyzing data. I have not yet read much of the documentation, but I did play around with some methods in it, such as accessing different rows and columns, finding the max and mean of a column, and creating new csv files in a program.
     Project completed - US States Game: this program is a guessing game. A blank map of the US states is given, and the user must enter states they know. When a state is correctly inputted, it is labelled on the map. At the end, all of the states that the user did not get are saved in a csv file.
     Note - I am having trouble opening files in my programs (like text, csv, and images). Whenever I work on a project, I store the file at the same level as the main.py for easy access and to keep my workspace organized, but I keep getting errors that the file does not exit. I need to do more research about how to solve this problem.
 
@@ -366,7 +366,7 @@ Day 68 - August 8, 2025
 
 Day 69 - August 10, 2025
     Today, I worked on a larger project instead of covering new content.
-    Project completed - Blog Upgrade 2: this program is an upgraded version of days 57 and 60. It now stores all blog data in a databse. Because of this change, the user can now add, edit, and delete blog posts. 
+    Project completed - Blog Upgrade 2: this program is an upgraded version of days 57 and 60. It now stores all blog data in a database. Because of this change, the user can now add, edit, and delete blog posts. 
 
 Day 70 - August 11, 2025
     Topics covered - Authentication
@@ -402,3 +402,103 @@ Day 76 - August 30, 2025
     Topics covered - Aggregate Data and Merging DataFrames
         Today, I learned more about data science with Pandas. I discovered that you can incorporate HTML into your text cells in a Notebook. I also learned how to use teh agg() function to operate on specified cells. Lastly, I learned how to display 2 graphs that share an x-axis (with different y_axes) on the same graph, and ultimately how to merge them into one dataframe.
     Like the last few days, I did not complete a new project today. However, I practiced what I learned to analyze several csvs about the history of LEGO. 
+
+Day 77 - September 1, 2025
+    Topics covered - Resampling and Visualizing Data
+        Today, I learned how to resample data to best represent it in a graph. This included changing the data type of variables to datetime and using rolling averages. I also learned how to style charts by adding graphs and tick marks to axes.
+    Again, I did not complete a new project. I practiced these new skills in Google Colab Notebooks. 
+
+Day 78 - September 2, 2025
+    Topics covered - Plotly library
+        Today, I reviewed how to clean dataframes. Then, I used the plotly library to create visual representations of the data. Plotly can be use with or instead of Matplotlib. It seems like you can create more advanced charts with it.
+    Again, I worked in Google Colab Notebooks, so I did not complete a new project. 
+
+Day 79 - September 3, 2025
+    Topics covered - Basics of Numpy
+        Today, I was introduced to the numpy library. I learned how to create arrays and manipulate their values. I also know how to do linear algebra on arrays. I covered some basic modules in the library, such as arange(), flip(), nonzero(), random(), and linspace(). Finally, I learned how pictures are made up of arrays of colour tuples, so I can change the arrays slightly, which in turn changes the colours/direction of an image.
+    Today, I only did practice with Numpy in Google Colab Notebooks. 
+
+Day 80 - September 4, 2025
+    Topics covered - Querying Data and Linear Regressions
+        Today, I learned about 2 topics. First, I learned how to query for multiple pieces of data in a dataframe using loc[] and query(). I also learned how to create and interpret linear regregressions on my charts. I can display them using the Seaborn library. I can find the equations that create the linear regressions by calling on the LinearRegression class in the scikit-learn library.
+    I only completed practice with linear regression today, instead of finishing a larger project. 
+
+Day 81 - September 5, 2025
+    Today, I practiced creating charts with plotly and matplotlib. I did not cover new content.
+    Project completed - Noble Prizes: this program analyzes data related to winners of Nobel Prizes.
+
+Day 82 - September 6, 2025
+    Today, I practice analyzing data. I did not learn about new topics.
+    Project completed - Hand Washing Analysis: this program analyzes the data collected by Dr. Semmelweiss about the relation between hand washing and death rates during childbirth. 
+
+Day 83 - September 7, 2025
+    Today, I completed my data analysis section. I did not cover any new topics.
+    Project completed - Housing Prices: this prohect analyzed the housing market in Boston in the 1970s.
+
+*NOTE: From now on, I will put what I have learned to practice. I will only be completing projects until the end of the 100 days.
+
+Day 84 - September 8, 2025
+    Project completed - Text to Morse: this program takes a string integer and converts it to morse code. It then prints the results.
+
+Day 85 - September 12, 2025
+    Project completed - Tic Tac Toe: this program allows 2 users to play tic tac toe together. it uses error checking to ensure valid input is entered and that users choose spots that have not yet been chosen. 
+    One way to improve this project were to create a one-player version. To implement this, I would have to force the computer to choose random spots. However, it would be more interesting to play if the computer chose spots competitively. 
+
+Day 86 - September 17, 2025
+    Project started - Personal Portfolio
+        Today, I began working on a personal portfolio. I am creating it using my knowledge of HTML and Bootstrap. I finished the main layout of the site and added my own photos/content. However, there are many things that still need to be changed, such as sizing and theme colours. I worked for over an hour on the site today, so I will finish it tomorrow. 
+
+Day 87 - October 4, 2025
+    Project completed - Personal Portfolio
+        Today, I completed my personal portfolio. I added photos to the cards in the certifications area, and figured out how to set them as backgrounds that do not repeat. I also fixed all the buttons and added a footer. Although this portfolio is simple right now, it has a good layout which can be easily added to later if I decide to improve it. 
+
+Day 88 - October 20, 2025
+    Project started - Breakout Game
+        Today, I began working on the Breakout Game. I finished the scoreboard, ball, and paddle classes. A lot of the concepts of these 3 classes were reused from the Pong Game on day 22. I also began the main functionality and wrote out the pseudocode for the overall project. After that, I figured out how to create the rows of bricks and added collision detection with the paddle and walls. When the ball hits the walls, it ends the game. I worked for an hour and a half, so I will finish the project tomorrow. 
+
+Day 89 - October 21, 2025
+    Project worked on - Breakout Game
+        Today, I continued to work on the Breakout Game. I ran into a subproblem that took me a while to solve: how to detect when the ball has hit one of the 64 bricks, and how to remove that brick from the game. I ended up setting all the x and y coordinates of the brick as instance variables, such as the top and bottom parameters. Then, I can loop through each brick to determine whether the ball's coordinates are close enough for it to be considered a collision. Along with this, I revamped the ball class so that it has one method to "bounce" off different objects, and I moved collision detection with walls and the paddle into the ball class. As I have been working, I have been coming up with more ideas on how to improve this game, so I may work on it for a few more days.
+
+Day 90 - December 3, 2025
+    Project worked on - Breakout Game
+        Today, I worked on the main file for the breakout game. I fixed some bugs that were blocking the bricks to be created, and I changed some of the common functionality to work as class methods. The ball now moves, the score updates when the ball passes the bricks, and the game resets for a new round. However, the collision detection with the bricks is not yet working. 
+    
+Day 91 - December 7, 2025
+    Project worked on - Breakout Game
+        Today, I debugged several important components of the program. Before today, most of the bugs I have found were compile-time errors. However, now that the game is running, I was able to find the edge cases where game play doesn't make sense. I improved the size of the bricks so that the layout of the game is complete. Yesterday, I programmed the bricks to be deleted once they were hit. However, the ball was not recognizing collision. The problem was when I tried to remove a brick while still iterating through the rest. I fixed the logic, and now it works. Among some small fixes, the only other large change I made was to set the bounce degree randomly for the ball at the beginning of the game. I need 1 more day to touch up a few small details on this game.
+    
+Day 92 - December 8, 2025
+    Project finished - Breakout Game
+        Today, I finally completed the breakout game! I fixed the measurements used to determin whether collision occurred, changed the ball to dynamically bounce off the paddle based on the collision angle, and added a pop up at the end of the game to display the final score. If I were to come back to this project, I might look into calculating collisions with the paddle more accurately, and how to ensure a single speed for the game. 
+
+Day 93 - December 10, 2025
+    Project started - Disappearing Text
+        Today, I began a new GUI project. It is called the Disappearing text app. When the user begins the program, they have 10 seconds to type the next character into the textbox. If they take too long to type, a warning is displayed, then after 10 seconds, the textbox is emptied. The purpose of this app is to help users who are experiencing writer's block. I finished the GUI design today and created a list of functionality to work on tomorrow. 
+        
+Day 94 - December 12, 2025
+    Project completed - Disappearing Text
+        Today, I completed the disappearing text app! I implemented the timer, which was pretty easy, as it was similar to the Pomodoro timer. I also added the typing detection to reset the timer. Lastly, I fixed the buttons so that the app can begin and end. 
+
+Day 95 - December 14, 2025
+    Project started - Space Invaders
+        Today, I began the Space Invaders game. I created an outline of what the GUI would look like, as well as the functionality required in different classes of the game. Then, I developed the logic to create the bunkers on the screen and the movement of the space ship. Tomorrow, I will add the aliens and the shooting capabilities. 
+
+Day 96 - December 16, 2025
+    Project worked on - Space Invaders
+        Today, I did not completely finish what I planned yesterday, but I did get a lot of work done. After yesterday, the logic for the bunkers was correct, but the spacing was off. I started by fixing that. Then, I fixed the aesthetic of the ship (the shape, colour, and spacing). Finally, I finished the shooting mechanism. Although the aliens are not yet created, the shooting can toggle between the ship and aliens, so it will work for both. My next steps are to add the aliens and collision detection. 
+
+Day 97 - December 17, 2025
+    Project worked on - Space Invaders
+        Today, I created the fleet of aliens. I also added the logic to make them move across the screen and slowly downward. It was challenging to figure out how to check that the fleet was not leaving the screen. Originally, I was checking the x coordinates of the last and first aliens, but I quickly realized that once they were deleted, the logic wouold no longer work. Instead, I found the max and min x coordinates for the fleet, and checked against that.
+
+Day 98 - December 19, 2025
+    Project worked on - Space Invaders
+        Today, I changed some parts of the gameplay to make the app more challenging. I reduced the size of the bunkers and adjusted their location on the screen. I also sped up the aliens so that they move down the screen every 10 seconds. After those fixes, I added the shooting mechanism to the aliens. First, a random number is generated between 1 and 10. If the number is 1 and there are not too many alien shots already on the screen, then a random alien index is generated, and a shot is created for that alien. The final parts of this project are to add scoring, 3 lives (or ships), and the end of the game.
+
+Day 99 - December 22, 2025
+    Project completed - Space Invaders
+        Today, I finished Space Invaders. I changed the ship creation so that an array of 3 ships would be created at the beginning of game play. Then, I changed the collision detection logic and the key events so that only the current ship would work. The game now ends when all the ships have been destroyed. I also put the alien creation into a function so that everytime the fleet is completely destroyed, a new fleet of aliens appears. Along with this, I fixed some logic errors with the shot collision. I was using break statements so that a deleted shot would not be rechecked, but in some places I changed it to continue so that other shots would not be ignored. Lastly, I added scoring and a pop-up at the end of the game to tell the user their final score. 
+
+Day 100 - December 23, 2025
+    I am officially done the #100DaysOfCode Challenge! Today, I reviewed some of my past projects, and fixed several bugs I found. I made edits to days 29, 34, and 69. The blog post website is still not fully functioning, as there is an issue accessing the content of the database. Although I am done this challenge, I will come back to fix this problem. 

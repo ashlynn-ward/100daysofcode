@@ -6,14 +6,15 @@ class QuizBrain():
     def __init__(self, q_list):
         self.question_number =0
         self.question_list = q_list
+        self.current_question = ""
         self.score = 0
     
     #Method next_question retrieves the next question in the list, displays it, and prompts user to answer it
     def next_question(self):
-        current_question = self.question_list[self.question_number]
+        self.current_question = self.question_list[self.question_number]
         self.question_number+=1
         #Unescape the html text and return the question
-        q_text = html.unescape(current_question.text)
+        q_text = html.unescape(self.current_question.text)
         return f"Q.{self.question_number}: {q_text}"
 
     #Method still_has_questions checks whether there are still questions in the bank and returns a boolean
@@ -27,4 +28,3 @@ class QuizBrain():
             return True
         else:
             return False
-        print(f"Current score: {self.score}/{self.question_number}\n\n")

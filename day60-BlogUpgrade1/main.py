@@ -23,15 +23,15 @@ def home_page():
 def about_page():
     return render_template("about.html")
 
-@app.route("/contact")
+@app.route("/contact", methods = ["GET", "POST"])
 def contact_page():
     if request.method=="POST":
         name=request.form['name']
         email=request.form['email']
         phone=request.form['phone']
         message=request.form['message']
-        return render_template("contact.html", message_sent==True)
-    return render_template("contact.html", message_sent==False)
+        return render_template("contact.html", message_sent=True)
+    return render_template("contact.html", message_sent=False)
 
 @app.route("/post/<int:index>")
 def post_page(index):
